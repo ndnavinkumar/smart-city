@@ -8,14 +8,19 @@ const Login = () => {
   return (
     <div className="background">
       <div className="center">
+        <div className="header">
+          <h1>
+            SMART CAMPUS
+            <br />
+            COMMAND CENTER
+          </h1>
+        </div>
+        <div className="green-line"></div>
         <div className="login-card">
-          <div className="header">
-            <h1>SMART CAMPUS<br />COMMAND CENTER</h1>
-          </div>
-
           <h2 className="subheading">Sign In</h2>
 
-          <form className="login-form">
+          <form className="login-form" onSubmit={handleSubmit}>
+            <label className="input-label">username</label>
             <input
               type="text"
               placeholder="Username"
